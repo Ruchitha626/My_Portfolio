@@ -441,6 +441,16 @@ html {
   font-size: 16px;
 }
 
+.project-point strong {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-point strong::after {
+  content: ":";
+}
+
 .exp-points {
   font-family: "Inter", sans-serif;
   text-align: left;
@@ -571,42 +581,56 @@ html {
   font-size: 14px;
   margin-right: 4px;
 }
-
+/* Simple Point-Wise Formatting */
 .pdesc {
   font-family: "Inter", sans-serif;
   color: var(--text-light);
   font-size: 15px;
-  /* Reduced from 16px */
   line-height: 1.7;
   margin: 0 0 22px 0;
-  /* Adjusted margins */
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.project-link {
-  font-family: "Manrope", sans-serif;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--secondary);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 15px;
-  /* Reduced from 16px */
-  transition: all 0.3s ease;
-  margin-top: auto;
-  padding: 8px 0;
+.project-point {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(157, 133, 217, 0.1);
 }
 
-.project-link:hover {
+.project-point:last-child {
+  border-bottom: none;
+}
+
+.project-point strong {
+  display: block;
   color: var(--primary);
-  gap: 14px;
-  /* Reduced from 15px */
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-family: "Manrope", sans-serif;
 }
 
-.project-link i {
-  font-size: 16px;
-  /* Reduced from 18px */
+.project-point span {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Add subtle bullet */
+.project-point {
+  position: relative;
+  padding-left: 16px;
+}
+
+.project-point::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 20px;
+  top: 8px;
 }
 
 /* ---------------------------------------------
