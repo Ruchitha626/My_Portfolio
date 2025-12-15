@@ -1,13 +1,187 @@
-<!doctype html>
-<html lang="en">
+<!-- ================= FONT + ICONS ================= -->
+
 <head>
-  <meta charset="utf-8">
-  <title>Interviewprep</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <title>Ruchitha Boddula | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ================= FONT + ICONS ================= -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Global Styles -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/downloadR.png">
 </head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav-container">
+    <div class="nav-logo">Portfolio</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- <div class="nav-toggle"><i class="fas fa-bars"></i></div> -->
+  </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="about">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>Hi there! I'm <span>Ruchitha Boddula</span></h1>
+      <p class="role">Full Stack Developer — Turning Ideas Into Reality</p>
+
+      <p class="desc">
+        Whether it's designing sleek interfaces or building scalable backend workflows,
+        I love building products that feel effortless and engaging to use.
+        Angular and Spring Boot are my tools of choice to make this happen.
+      </p>
+
+
+      <div class="hero-actions fancy-buttons">
+        <a class="btn pill primary-pill" href="assets/RUCHITHA-BODDULA-FullStack_Resume.pdf" download>
+          <i class="fas fa-download"></i> Resume
+        </a>
+
+        <a class="btn pill glass-pill" href="#projects">
+          Explore Projects
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-ring floating">
+        <img src="assets/Ruchi_AI.jpg" alt="Ruchitha" />
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+<!-- <section id="about" class="section about">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    A passionate Full Stack Developer specializing in Angular, Spring Boot, REST APIs,
+    and Microservices. I enjoy transforming ideas into smooth, real-world digital products.
+  </p>
+</section> -->
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section experience-section">
+  <h2 class="section-title">Professional Journey</h2>
+
+  <div class="experience-wrapper">
+    <div class="exp-item">
+
+      <div class="exp-header">
+        <h3>Jr. Associate Software Engineer · Cyepro Solutions Pvt Ltd</h3>
+        <p class="muted">Jan 2024 – Present</p>
+      </div>
+
+      <p class="project-name">Project: <strong>Cyepro Smart Sales App</strong></p>
+
+      <ul class="exp-points">
+        <li>Developed 25+ product modules (CRUD, workflows, automations).</li>
+        <li>Improved app performance by optimizing Spring Boot REST APIs.</li>
+        <li>Created reusable Angular components improving UI consistency.</li>
+        <li>Fixed 100+ defects & delivered 25 new enhancements.</li>
+      </ul>
+
+      <div class="exp-skills">
+        <span>Angular</span><span>TypeScript</span><span>Java</span><span>Spring Boot</span>
+        <span>REST APIs</span><span>MySQL</span><span>Git</span><span>PrimeNG</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section projects-section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card clean-card">
+      <h3>Dynamic Survey Forms</h3>
+      <p class="tags">Angular · Spring Boot · MySQL</p>
+      <p class="pdesc">
+        Built a drag-and-drop survey builder with reusable question templates,
+        live analytics, response tracking, and export-ready reports for teams.
+      </p>
+      <a class="project-link" target="_blank" href="https://github.com/Ruchitha626">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card clean-card">
+      <h3>Library Management System</h3>
+      <p class="tags">Angular · Spring Boot · PrimeNG</p>
+      <p class="pdesc">
+        Digitized cataloging, membership, and circulation with automated fines,
+        configurable workflows, and an admin dashboard featuring advanced search.
+      </p>
+      <a class="project-link" target="_blank" href="https://github.com/Ruchitha626">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- ================= CONNECT SECTION ================= -->
+<section id="contact" class="contact-section">
+
+  <h2 class="section-title">Let’s Connect </h2>
+
+  <p class="contact-intro">
+    Technology brings people together — and I love being a part of that.
+    Let’s connect, share ideas, and build something great.
+  </p>
+
+  <div class="connect-grid">
+
+    <a class="connect-card float" href="mailto:ruchithaboddula626@gmail.com">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p>ruchithaboddula626@gmail.com</p>
+    </a>
+
+    <a class="connect-card float" href="https://www.linkedin.com/in/ruchithaboddula3/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      <h4>LinkedIn</h4>
+      <p>Let’s connect professionally</p>
+    </a>
+
+    <a class="connect-card float" href="https://github.com/Ruchitha626" target="_blank">
+      <i class="fab fa-github"></i>
+      <h4>GitHub</h4>
+      <p>View my projects & code</p>
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  © <span id="current-year">2025</span> Ruchitha Boddula —
+  Crafted with <i class="fas fa-heart"></i> & <i class="fas fa-code"></i>
+</footer>
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
